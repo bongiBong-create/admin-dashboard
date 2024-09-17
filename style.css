@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "roboto";
+    src: url("fonts/Roboto-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "robot";
+    src: url("fonts/Roboto-Light.ttf");
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+    font-weight: 500;
+}
+
+body {
+    min-height: 100%;
+}
