@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
+    <header class="header">
         <div class="header__logo">
             <img class="logo" src="imgs/icons/logo.svg" alt="logo">
-            <span>Dashboard</span>
+            <span class="logo__title">Dashboard</span>
         </div>
+
         <nav class="nav">
             <ul>
                 <li>
@@ -40,19 +44,143 @@
             </ul>
         </nav>
 
-        <ul class="header__supports">
-            <li>
-                <img src="imgs/icons/cog.svg">
-                <a href="#">Settings</a>
-            </li>
-            <li>
-                <img src="imgs/icons/chat-question.svg">
-                <a href="#">Support</a>
-            </li>
-            <li>
-                <img src="imgs/icons/shield-alert.svg">
-            </li>
-        </ul>
+        <div class="nav__supports">
+            <ul class="header__supports">
+                <li>
+                    <img src="imgs/icons/cog.svg">
+                    <a href="#">Settings</a>
+                </li>
+                <li>
+                    <img src="imgs/icons/chat-question.svg">
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <img src="imgs/icons/shield-alert.svg">
+                    <a href="#">Privacy</a>
+                </li>
+            </ul>
+        </div>
     </header>
+
+    <main class="main">
+        <div class="main__header-container">
+            <section class="main__header">
+                <div class="search__container">
+                    <div class="search">
+                        <img src="imgs/icons/magnify.svg" width="30">
+                        <input class="input__search" type="search">
+                    </div>
+                    <div class="avatar__info">
+                        <img src="imgs/icons/bell.svg" width="20">
+                        <div class="avatar__img"></div>
+                        <div class="avatar__name">Morgan Oakley</div>
+                    </div>
+                </div>
+                <div class="main__header-account">
+                    <div class="account__info">
+                        <div class="skyblue"></div>
+                        <div class="info__hello">
+                            <span>Hi there,</span>
+                            <span>Morgan Oakley (@morgan)</span>
+                        </div>
+
+                    </div>
+                    <div class="account__btns">
+                        <button class="account__btn">New</button>
+                        <button class="account__btn">Upload</button>
+                        <button class="account__btn">Share</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="main__content">
+            <div class="projects">
+                <h1>Your projects</h1>
+                <div class="projects__grid">
+                    <div class="projects__grid-item">
+                        <h3>Super cool project</h3>
+                        <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.</p>
+                    </div>
+                    <div class="projects__grid-item">
+                        <h3>Super cool project</h3>
+                        <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.</p>
+                    </div>
+                    <div class="projects__grid-item">
+                        <h3>Super cool project</h3>
+                        <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.</p>
+                    </div>
+                    <div class="projects__grid-item">
+                        <h3>Super cool project</h3>
+                        <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.</p>
+                    </div>
+                    <div class="projects__grid-item">
+                        <h3>Super cool project</h3>
+                        <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id
+                            facilisis felis accumsan nec.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="aside__container">
+                <h1>Announcements</h1>
+                <div class="announcements__container">
+                    <div class="announcements__item">
+                        <h3>Site Maintenance</h3>
+                        <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum
+                            accumsan porttitor..</p>
+                    </div>
+                    <div class="announcements__item">
+                        <h3>Site Maintenance</h3>
+                        <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum
+                            accumsan porttitor..</p>
+                    </div>
+                    <div class="announcements__item">
+                        <h3>Site Maintenance</h3>
+                        <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum
+                            accumsan porttitor..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="aside__trending">
+                <h1>Trending</h1>
+                <div class="trending__container">
+                    <div class="trending__item">
+                        <div class="avatar__img"></div>
+                        <div class="trending__item-info">
+                            <div>@tegan</div>
+                            <p>World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="trending__item">
+                        <div class="avatar__img"></div>
+                        <div class="trending__item-info">
+                            <div>@tegan</div>
+                            <p>World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="trending__item">
+                        <div class="avatar__img"></div>
+                        <div class="trending__item-info">
+                            <div>@tegan</div>
+                            <p>World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="trending__item">
+                        <div class="avatar__img"></div>
+                        <div class="trending__item-info">
+                            <div>@tegan</div>
+                            <p>World Peace Builder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
+
 </html>
